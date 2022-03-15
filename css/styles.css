@@ -28,7 +28,6 @@ body {
 .name {
     padding: 2rem;
 }
-
 .main-nav {
     flex-direction: column;
     align-self: center;

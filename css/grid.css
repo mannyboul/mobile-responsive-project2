@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-family: 'arial, sans-serif';
+  src: url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: 'Baloo Bhaijaan 2';
+}
+main {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+}
+/* HEADER */
+h1 {
+  text-align: center;
+}
+a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  color:rgb(102, 102, 102)
+}
+.bio-text {
+  padding-top: 1.6rem;
+  padding-bottom: 6rem;
+  font-size: 1.1rem;
+}
+.name {
+  padding-bottom: 3rem;
+}
+.project-name {
+  margin-top: 1.6rem;
+  margin-bottom: .8rem;
+}
+.project-image {
+  margin-top: 1.6rem;
+}
+.contact-header {
+  padding-top: 8rem;
+  text-align: center;
+  padding-bottom: 1.6rem;
+}
+.email {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.mail {
+  display: inline;
+}
+.phone {
+  margin-bottom: 4rem;
+}
+.contact-bio {
+  padding-bottom: 1.6rem;
+}
+.project-image, .profile-image {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+}
+.project, .name, .bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-nav {
+  display: none;
+}
+.footer {
+  display: flex;
+}
+.back-to-top {
+  text-align: right;
+  flex-grow: 2;
+  margin-right: 32px;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .bio {
+    flex-direction: row;
+  }
+  .bio-text {
+    font-size: 1.4rem;
+  }
+  a {
+    display: inline;
+  }
+  .main-nav {
+    text-align: center;
+  }
+  .top-nav-link {
+    margin-right: 1.5rem;
+  }
+  .projects {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: .6rem 0;
+  }
+  p {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.5rem;
+  }
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact-bio {
+    margin: 0 200px;
+  }
+  .back-to-top {
+    display: none;
+  }
+  .footer-nav {
+    display: inline;
+    margin-left: auto;
+    margin-right: 64px;
+  }
+  .bottom-nav-link {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    margin-left: 24px;
+  }
+  .main-nav {
+    margin-top: 15px;
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .projects {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: .6rem 0;
+    font-size: 1rem;
+  }
+  .project-disc {
+    margin: 0;
+  }
+  .project p {
+    padding: 0 25px;
+    font-size: 1.2rem;
+  }
+}
